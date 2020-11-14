@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FOTOGALÉRIA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modal_add_category.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/photo_category_background.js"></script>
+    <script>
+        function funonload(){
+            let imgSrc = $('#first_category:first-child').find('img').attr('src')
+            $("#headImage_category").css("background-image", `url(${imgSrc})`)
+        }
+        window.onload = funonload
+    </script>
+</head>
+<body>
+
+<div id="headImage_category"></div>
+
+<div id="bottom">
+    <div class="content">
+        <div class="header-content">
+            <h1 style="font-size: 25px; padding-bottom: 20px">FOTOGALÉRIA</h1>
+            <h2 style="font-size: 15px; margin-bottom: 15px;">KATEGÓRIE</h2>
+            <div class="line"></div>
+        </div>
+        <div class="img-area">
+
+            <div onmouseleave="backgroundCategoryHoverReset()" onmouseenter="backgroundCategoryOnHover(this,event)"
+                 class="photo_box" id="first_category">
+                <div class="photo">
+                    <img class="img-photo_gallery" src="images/landscape-meadow-field-mountains-66874.jpeg">
+                </div>
+                <div class="photo_info">
+                    <p class="photo_text">PRÍRODA</p>
+                    <p class="num_photo_text">6 fotiek</p>
+                </div>
+            </div>
+
+            <div onmouseleave="backgroundCategoryHoverReset()" onmouseenter="backgroundCategoryOnHover(this,event)"
+                 class="photo_box">
+                <div class="photo">
+                    <img class="img-photo_gallery" src="images/pexels-photo-261187.jpeg">
+                </div>
+                <div class="photo_info">
+                    <p class="photo_text">ARCHITEKTÚRA</p>
+                    <p class="num_photo_text">8 fotiek</p>
+                </div>
+            </div>
+
+            <div onmouseleave="backgroundCategoryHoverReset()" onmouseenter="backgroundCategoryOnHover(this,event)"
+                 class="photo_box">
+                <div class="photo">
+                    <img class="img-photo_gallery" src="images/pexels-photo-27411.jpg">
+                </div>
+                <div class="photo_info">
+                    <p class="photo_text">ĽUDIA</p>
+                    <p class="num_photo_text">4 fotiek</p>
+                </div>
+            </div>
+
+            <div onmouseleave="backgroundCategoryHoverReset()" onmouseenter="backgroundCategoryOnHover(this,event)"
+                 class="photo_box">
+                <div class="photo">
+                    <img class="img-photo_gallery" src="images/food-salad-healthy-lunch.jpg">
+                </div>
+                <div class="photo_info">
+                    <p class="photo_text">JEDLO</p>
+                    <p class="num_photo_text">5 fotiek</p>
+                </div>
+            </div>
+
+            <div onmouseleave="backgroundCategoryHoverReset()" onmouseenter="backgroundCategoryOnHover(this,event)"
+                 class="photo_box">
+                <div class="photo">
+                    <img class="img-photo_gallery" src="images/pexels-photo-210019.jpeg">
+                </div>
+                <div class="photo_info">
+                    <p class="photo_text">AUTÁ</p>
+                    <p class="num_photo_text">13 fotiek</p>
+                </div>
+            </div>
+
+            <div data-toggle="modal" data-target="#add_category_modal" class="photo_box_add">
+                <div id="add_photo_category">
+                    <img src="icons/shape-icon.svg" style="width: 50px; height: 50px; margin-bottom: 15px">
+                    <p style="color: darkgrey">PRIDAŤ KATEGÓRIU</p>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Add Category -->
+        <div class="modal fade" id="add_category_modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close p-0" data-dismiss="modal" aria-label="Close">
+                            <span style="font-family: 'Comfortaa', cursive" aria-hidden="true">
+                                <img src="icons/close-icon.svg"> ZAVRIEŤ</span>
+                    </button>
+                    <div class="modal-content-without-close">
+                        <div class="modal-header">
+                            <h5 style="color: #4f4f4f; font-weight: bold; font-family: 'Comfortaa', cursive; letter-spacing: 1px"
+                                class="modal-title">PRIDAŤ KATEGÓRIU</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <p style="margin-bottom: 12px">ZADAJTE NÁZOV KATEGÓRIE</p>
+                            <button type="button" class="btn btn-success"><img style="margin: 6px 9px 8px 0"
+                                                                               src="icons/add-icon.svg">PRIDAŤ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    -->
+    </div>
+</div>
+
+<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+<script language="JavaScript" type="text/javascript" src="js/photo_category_background.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+#photo-modal .modal-dialog {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 767px) {
+  #photo-modal .modal-dialog {
+    padding-bottom: 12px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #photo-modal .modal-dialog {
+    padding-bottom: 30px;
+    padding-right: 76px;
+  }
+}
+#photo-modal .modal-dialog .modal-content {
+  background-color: transparent;
+  border: none;
+}
+#photo-modal .modal-dialog .modal-content .modal-header {
+  border: none;
+  padding-bottom: 25px;
+}
+#photo-modal .modal-dialog .modal-content .modal-header .close {
+  color: #ffffff;
+  text-shadow: none;
+  opacity: 0.8;
+}
+#photo-modal .modal-dialog .modal-content .modal-header .close:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+#photo-modal .modal-dialog .modal-content .modal-header .close span {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 575px) {
+  #photo-modal .modal-dialog .modal-content .modal-body {
+    padding: 0 4rem;
+  }
+}
+#photo-modal .modal-dialog .modal-content .modal-body .modal-nav div {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#photo-modal .modal-dialog .modal-content .modal-body .modal-nav div:hover {
+  opacity: 1;
+  right: -42px;
+}
+@media only screen and (max-width: 767px) {
+  #photo-modal .modal-dialog .modal-content .modal-body .modal-nav div {
+    right: -25px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #photo-modal .modal-dialog .modal-content .modal-body .modal-nav div {
+    right: 25px;
+  }
+}
+#photo-modal .modal-dialog .modal-content .modal-body .modal-nav #prev-icon {
+  left: -40px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#photo-modal .modal-dialog .modal-content .modal-body .modal-nav #prev-icon:hover {
+  opacity: 1;
+  left: -42px;
+  width: 105%;
+}
+@media only screen and (max-width: 767px) {
+  #photo-modal .modal-dialog .modal-content .modal-body .modal-nav #prev-icon {
+    left: -25px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #photo-modal .modal-dialog .modal-content .modal-body .modal-nav #prev-icon {
+    left: 25px;
+  }
+}

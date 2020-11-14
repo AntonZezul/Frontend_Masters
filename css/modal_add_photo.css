@@ -1,0 +1,71 @@
+#add_photo_modal {
+  padding-right: 0;
+}
+#add_photo_modal .modal-dialog {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+}
+@media only screen and (min-width: 700px) {
+  #add_photo_modal .modal-dialog {
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #add_photo_modal .modal-dialog {
+    margin: auto 2.5rem;
+  }
+}
+#add_photo_modal .modal-dialog .modal-content {
+  background-color: transparent;
+  border: none;
+}
+#add_photo_modal .modal-dialog .modal-content .close {
+  color: #ffffff;
+  text-shadow: none;
+  opacity: 0.8;
+  margin: 1rem 0 1rem auto;
+}
+#add_photo_modal .modal-dialog .modal-content .close span {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+#add_photo_modal .modal-dialog .modal-content .modal-content-without-close {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+}
+#add_photo_modal .modal-dialog .modal-content .modal-content-without-close .modal-header {
+  border-bottom: none;
+  display: block;
+}
+#add_photo_modal .modal-dialog .modal-content .modal-content-without-close .modal-body {
+  border: darkgray dashed 2px;
+  margin: 0 20px;
+  text-align: center;
+}
+#add_photo_modal .modal-dialog .modal-content .modal-content-without-close .modal-body .upload_button {
+  background-color: #ffffff;
+  display: inline-block;
+  color: darkgray;
+  font-size: medium;
+  font-weight: 500;
+  padding: 10px 30px;
+  text-decoration: none;
+  border: darkgray solid 3px;
+  border-radius: 3px;
+  margin: 20px 0;
+}
+#add_photo_modal .modal-dialog .modal-content .modal-content-without-close .modal-body .upload_button:hover {
+  background-color: darkgray;
+  color: #ffffff;
+}
+#add_photo_modal .modal-dialog .modal-content .modal-content-without-close .modal-body .upload_button:active {
+  position: relative;
+  top: 3px;
+}
+#add_photo_modal .modal-dialog .modal-content .modal-content-without-close .modal-footer {
+  border-top: none;
+}
